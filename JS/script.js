@@ -29,10 +29,8 @@ function agregarTarea (tarea,id,realizado,eliminar){
                         <i class="fas fa-trash de" data="eliminar" id="${id}"></i>
                         </li>
                     `
-    
     lista.insertAdjacentHTML("beforeend",elemento)
 }
-
 
 //Funcion tarea realizada
 function tareaRealizada(element){
@@ -42,12 +40,7 @@ function tareaRealizada(element){
     listTareas[element.id].realizado = listTareas[element.id].realizado ? false : true;
 }
 
-/*Funcion de tarea eliminada
-function tareaEliminada(element){
-    element.parentNode.parentNode.removeChild(element.parentNode);
-    listTareas[element.id].eliminar = true;
-}*/
-
+//Funcion tarea eliminada
 function tareaEliminada(element) {
     element.parentNode.parentNode.removeChild(element.parentNode);
     listTareas[element.id].eliminar = true;
@@ -116,14 +109,7 @@ if(data){
     id = 0;
 }
 
-/* Cargar lista guardada
-function cargarLista(DATA) {
-    DATA.forEach(function (i) {
-        agregarTarea(i.nombre, i.id, i.realizado, i.eliminar);
-        }
-    );
-}*/
-
+//Funcion cargar lista
 function cargarLista(DATA) {
     DATA.forEach(function (i) {
         if (!i.eliminar) {
