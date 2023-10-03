@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #fafafb;
+    --teal: #00FFC0;
+    --cobalt-blue: #0047AB;
+    --blue-dark: #2a73c2;
+    --green: #2c672c;
+    --blue-light: #04d4c3;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--cobalt-blue), var(--teal));
+    height: 100vh;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    font-family: 'Prompt', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    max-width: 80%;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.nombre-form {
+    display: flex;
+    max-width: 80%;
+    width: 410px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nombre-boton {
+    width: 60px;
+    cursor: pointer;
+}
+
+/* Perfil */
+.perfil h1 {
+    color: var(--white);
+}
+
+.perfil span {
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+#fecha {
+    color: var(--white);
+    padding: 40px 0 5px 0;
+}
+
+/* Agregar tarea */
+.agregar-tarea {
+    background-color: var(--white);
+    border-radius: 8px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.agregar-tarea input {
+    flex: 1;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--white);
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.agregar-tarea i {
+    font-size: 30px;
+    color: var(--cobalt-blue);
+}
+
+.agregar-tarea i:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.agregar-tarea input::placeholder {
+    font-size: 1.1rem;
+    color: var(--cobalt-blue);
+}
+
+/* Seccion tarea */
+.seccion-tarea h3 {
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.seccion-tarea li {
+    display: flex;
+    background: linear-gradient(to bottom, var(--cobalt-blue), var(--green));
+    border-radius: 8px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+    color: var(--white);
+    list-style-type: none;
+}
+
+.seccion-tarea i {
+    font-size: 20px;
+}
+
+.seccion-tarea i:hover {
+    color: var(--blue-light);
+}
+
+.seccion-tarea > ul p {
+    font-size: 1.2rem;
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: var(--blue-light);
+}

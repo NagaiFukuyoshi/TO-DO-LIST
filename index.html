@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Lista de tareas</title>
+</head>
+<body>    
+
+    <div class="container" id="pagina-principal">
+        <div class="perfil">
+            <div id="fecha"></div>
+            <h1>¡Hola!</h1>
+            <span>¡Organiza tu día, cumple tus metas y alcanza tus sueños!</span>
+        </div>
+
+        <div class="agregar-tarea">
+            <input type="text" id="input" placeholder="Agregar una tarea">
+            <i id="botonEnter" class="fas fa-plus-circle"></i>
+        </div>
+
+        <div class="seccion-tarea">
+            <h3>Estas son tus tareas pendientes.</h3>
+            <ul id="lista">
+            </ul>
+        </div>
+    </div>
+
+
+<script src="JS/script.js"></script>
+
+</body>
+</html>
